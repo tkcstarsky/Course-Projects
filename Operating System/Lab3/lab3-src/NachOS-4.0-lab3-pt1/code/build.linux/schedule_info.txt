@@ -1,0 +1,14 @@
+
+
+--------------switch process------------
+running: tid=0	name=main   	status=READY  	priority=197
+
+Ready list contents:
+running: tid=0	name=main   	status=READY  	priority=197
+
+
+--------------switch process------------
+running: tid=0	name=main   	status=READY  	priority=194
+
+Ready list contents:
+running: tid=0	name=main   	status=READY  	priority=194

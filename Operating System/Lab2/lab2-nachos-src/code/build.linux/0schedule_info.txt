@@ -1,0 +1,126 @@
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=915	 name=postal worker   status=READY  	 pri=227
+
+
+-------------------------one switch-------------------------------
+running: tid=915	 name=postal worker   status=BLOCKED	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=335	 name=Forked thread   status=READY  	 pri=243
+
+
+-------------------------one switch-------------------------------
+running: tid=335	 name=Forked thread   status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=335	 name=Forked thread   status=READY  	 pri=243
+
+
+-------------------------one switch-------------------------------
+running: tid=335	 name=Forked thread   status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=335	 name=Forked thread   status=READY  	 pri=243
+
+
+-------------------------one switch-------------------------------
+running: tid=335	 name=Forked thread   status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=335	 name=Forked thread   status=READY  	 pri=243
+
+
+-------------------------one switch-------------------------------
+running: tid=335	 name=Forked thread   status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=335	 name=Forked thread   status=READY  	 pri=243
+
+
+-------------------------one switch-------------------------------
+running: tid=335	 name=Forked thread   status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=335	 name=Forked thread   status=READY  	 pri=243
+
+
+-------------------------one switch-------------------------------
+running: tid=335	 name=Forked thread   status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=335	 name=Forked thread   status=READY  	 pri=243
+
+
+-------------------------one switch-------------------------------
+running: tid=335	 name=Forked thread   status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233
+
+
+-------------------------one switch-------------------------------
+running: tid=886	 name=main            status=RUNNING	 pri=-1
+
+Ready list contents:
+         tid=335	 name=Forked thread   status=READY  	 pri=243
+
+
+-------------------------one switch-------------------------------
+running: tid=335	 name=Forked thread   status=BLOCKED	 pri=-1
+
+Ready list contents:
+         tid=886	 name=main            status=READY  	 pri=233

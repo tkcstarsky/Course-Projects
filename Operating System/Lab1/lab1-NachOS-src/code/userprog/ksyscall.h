@@ -1,0 +1,105 @@
+/**************************************************************
+ *
+ * userprog/ksyscall.h
+ *
+ * Kernel interface for systemcalls 
+ *
+ * by Marcus Voelp  (c) Universitaet Karlsruhe
+ *
+ **************************************************************/
+
+#ifndef __USERPROG_KSYSCALL_H__ 
+#define __USERPROG_KSYSCALL_H__ 
+
+#include "kernel.h"
+
+
+
+
+void SysHalt()
+{
+  kernel->interrupt->Halt();
+}
+
+
+int SysAdd(int op1, int op2)
+{
+  return op1 + op2;
+}
+
+int SysSub(int op1, int op2)
+{
+  return op1 - op2;
+}
+
+int SysCreate(int address)
+{
+  	int i;
+	int letter=1;
+  	char filename[128];
+  	for(i=0;i<128,letter!='\0';i++)
+	{
+    		kernel->machine->ReadMem(address+i,1,&letter);
+		filename[i]=(char)letter;
+  	}
+  	if(kernel->fileSystem->Create(filename)) return 1;
+  	else return -1;
+
+}
+
+int SysOpen(int address)
+{
+ 	int i,id;
+        int letter=1;
+  	char filename[128];
+   	for(i=0;i<128,letter!='\0';i++)
+	{
+		kernel->machine->ReadMem(address+i,1,&letter);
+		filename[i]=(char)letter;
+	}
+  	OpenFile* openfile= kernel->fileSystem->Open(filename);
+  	if (openfile == NULL) return -1;
+  	else 
+	{
+		id = openfile->Getid();
+		return id;
+	}
+}
+
+int SysWrite(int buf, int size,OpenFileId id)
+{
+ 	OpenFile* openfile =new OpenFile(id);
+  	char buffer[256];
+  	int i;
+	int letter=1;
+   	for(i=0;i<size,letter!='\0';i++)
+	{
+    		kernel->machine->ReadMem(buf+i,1,&letter);
+		buffer[i]=(char)letter;
+  	}
+
+  	if(openfile->Write(buffer,size)) return i-1;
+	else return -1;
+}
+
+int SysRead(int buf, int size,OpenFileId id)
+{
+  	int i;
+  	OpenFile* openfile =new OpenFile(id);
+  	char filecontent[size];
+  	int readnumber=0;
+  	readnumber=openfile->Read(filecontent,size);
+  	filecontent[size]= '\0';
+  	for(i = 0;i<size;i++)   
+	if (!(kernel->machine->WriteMem(buf+i,1,(int)filecontent[i]))) return -1;
+  	return readnumber;
+}
+
+int SysClose(int id)
+{
+	if(Close(id)==0) return 1;
+	else return -1;
+}
+
+
+#endif /* ! __USERPROG_KSYSCALL_H__ */
