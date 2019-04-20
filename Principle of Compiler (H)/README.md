@@ -4,6 +4,7 @@ This is the Principle of Compiler (H) Lab in USTC coded by TKC.
 * c1interpreter 针对C1语言的一个语义分析器
 * c1recognizer 针对C1语言的一个语法分析器
 * Homework 作业中夹杂的小实验
+* SpiderMonkey Js引擎优化（团队项目，仅含报告，源码位于龙芯服务器上）
 * README.md 本文件
 ## 实验说明
 * 本实验为编译原理与技术(H)的课程项目，具体实验要求及实验说明文档可查看：   
