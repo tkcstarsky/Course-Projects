@@ -1,0 +1,25 @@
+/\
+/ This program is used for tesing comment and it has mistakes.  
+fl/*cut it to two pieces*/oat a[5]; 
+int main()
+{ 
+    int i = 1;
+    /*when comment 
+    /*in 
+    another */
+    comment */
+    while (i > 0)
+    {
+        if (i < 5)
+        a[i - 1] = i;
+        else i = 0;
+        //i < 5 : a[i-1]<-i  \
+          i = 5 : break
+        i++;
+    } 
+    /*test 
+    // test1 \
+    test2
+    test3 */
+    a[0] = 0;
+}

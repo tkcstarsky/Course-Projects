@@ -1,0 +1,8 @@
+void add(){
+    int i=1,j=2;
+    i=i+j;
+}
+void main(){
+    add();
+    int j=4;
+}

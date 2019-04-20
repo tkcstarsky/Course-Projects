@@ -1,0 +1,8 @@
+void main(){
+    int j;
+    j = 3;
+    j  = -j;
+    float a;
+    a = 2.12;
+    a = -a;
+}

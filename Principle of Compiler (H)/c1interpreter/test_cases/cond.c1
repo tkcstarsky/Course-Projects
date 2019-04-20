@@ -1,0 +1,10 @@
+int x[5]={1,2,3,4};
+float y[3]={1.22,3.2,4.3};
+void main(){
+    int i=1;
+    float j = 4;
+    while(x[1]>0){
+        x[1]=i;
+        j=j*i;
+    }
+}
